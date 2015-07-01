@@ -6,11 +6,17 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1" > 
     	<title>Portfolio</title>
     	<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+    
     	<link rel="stylesheet" href="css/bootstrap.min.css">
     	<link rel="stylesheet" href="css/style.css">
+
+    	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 	</head>
 
 	<body>
+	<!-- Page body  --> 
 		<div class="container">
 			<!-- Page Header -->
 			<div class="row page-header-border section-bottom-margin" >
@@ -39,27 +45,94 @@
 			</div>
 				
 			<!-- Projects section -->
-
 			<div class="row text-center dark-text">
-				<div class="col-md-4">
-					<img class="img-responsive" src="http://lorempixel.com/g/360/220/sports" alt="Project 1 screenshot">
+
+				<!-- Project 1 section -->
+				<div class="col-md-4 bottom-padding">
+					<img class="img-responsive center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 1 screenshot" data-toggle="modal" data-target="#modProject1">
 					<h3 class="text-uppercase">Appify</h2>
 					<a href="https://github.com/" target="_blank">https://github.com </a>
 				</div>
 
-				<div class="col-md-4">
-					<img class="img-responsive" src="http://placebear.com/360/220"" alt="Project 2 screenshot">
+				<!-- Project 2 section -->
+				<div class="col-md-4 bottom-padding">
+					<img class="img-responsive center-image" src="http://placebear.com/360/220"" alt="Project 2 screenshot" data-toggle="modal" data-target="#modProject2">
 					<h3 class="text-uppercase">Sunflower</h2>
 					<a href="https://github.com/" target="_blank">https://github.com </a>
 				</div>
 
-				<div class="col-md-4">
-					<img class="img-responsive" src="http://lorempixel.com/g/360/220/sports" alt="Project 3 screenshot">
+				<!-- Project 3 section -->
+				<div class="col-md-4 bottom-padding">
+					<img class="img-responsive center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 3 screenshot" data-toggle="modal" data-target="#modProject3">
 					<h3 class="text-uppercase">Bokeh</h2>
 					<a href="https://github.com/" target="_blank">https://github.com/steikerg </a>
 				</div>
 			</div>
-
 		</div>
+
+	<!-- Modals -->
+
+  	<!-- Modal for Project 1 -->
+    <div class="modal fade" id="modProject1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-background modal-margins">
+          <div class="modal-header modalBorder">
+            <h3 class="modal-title text-uppercase text-center" id="myModalLabel">Appify Web Site</h3>
+          </div>
+          <div class="modal-body modal-text">
+            <img class="img-responsive modal-image-padding center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 1 screenshot" >
+            <div id="project-text">
+            	This was my second project in this HTML and CSS class. I learned a lot about HTML and CSS.
+            </div>
+          </div>
+          <div class="modal-footer modalBorder">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="modProject2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-background modal-margins">
+          <div class="modal-header modalBorder">
+            <h3 class="modal-title text-uppercase text-center" id="myModalLabel">Sunflower App</h3>
+          </div>
+          <div class="modal-body modal-text">
+            <img class="img-responsive modal-image-padding center-image" src="http://placebear.com/360/220" alt="Project 2 Screenshot" >
+            <div id="project-text">
+            	Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+            	<p><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. 
+            	<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            </div>
+          </div>
+          <div class="modal-footer modalBorder">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="modProject3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-background modal-margins">
+          <div class="modal-header modalBorder">
+            <h3 class="modal-title text-uppercase text-center" id="myModalLabel">Bokeh Furniture Store Web Site</h3>
+          </div>
+          <div class="modal-body modal-text">
+            <img class="img-responsive modal-image-padding center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 3 Screenshot" >
+            <div id="project-text">
+            	<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            </div>
+          </div>
+          <div class="modal-footer modalBorder">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 	</body>
 <html>

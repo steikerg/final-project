@@ -4,6 +4,15 @@ body {
 	font-weight: 400;
 }
 
+.center-image {
+	display: block;
+	margin: auto;
+}
+
+.bottom-padding {
+	padding-bottom: 30px;
+}
+
 .page-header-border {
 	border-bottom-style: solid;
 	border-bottom-width: 4px;
@@ -64,4 +73,32 @@ h4 {
 .title-logo {
 	margin-top: 24px;
 }
+
+.modal-background {
+	background-color: white;
+}
+
+.modal-margins {
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.modal-text {
+	font-size: 24px;
+}
+
+.modalBorder {
+	border-color: #D0C4AB;
+}
+
+.modal-image-padding {
+	padding-bottom: 12px;
+}
+
+
+
+
+
 
