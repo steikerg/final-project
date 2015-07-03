@@ -75,7 +75,8 @@ h4 {
 }
 
 .text-padding {
-	padding-left: 6px;
+	padding-left: 8px;
+	padding-right: 12px;
 }
 
 .title-super {
