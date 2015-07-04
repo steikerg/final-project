@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head id="head-tag">
 		<meta charset="utf-8">  
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1" > 
-    	<title>Portfolio</title>
     	<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
     
     	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -53,7 +52,7 @@
 			</div>
 				
 			<!-- Projects section -->
-			<div id="project-first3" class="row text-center">
+			<div id="project-section-first3" class="row text-center">
 
 				<!-- Project 1 section -->
 				<div class="col-md-4 bottom-padding">
@@ -153,6 +152,13 @@
   <!-- Opening Javascript tag                   -->
   <script type="text/javascript">
     //*********************************************************************
+    // Populate page title
+    //*********************************************************************
+    var formattedPageTitle = HTMLtitle.replace("%data%",siteInfo.pageTitle);
+    $("#head-tag").append(formattedPageTitle);
+
+
+    //*********************************************************************
     // Populate name, role and logo reference
     //*********************************************************************
     var formattedName =HTMLheaderName.replace("%data%",siteInfo.name);
@@ -181,6 +187,10 @@
     halfBaked = HTMLmainImage.replace("%alt%",siteInfo.mainImageAltText);
     var formattedMainImage = halfBaked.replace("%data%",siteInfo.mainImage);
     $("#main-image").append(formattedMainImage);
+
+
+
+
 
   </script>
 
