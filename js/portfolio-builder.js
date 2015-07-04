@@ -67,8 +67,9 @@ var HTMLheaderName = '<h1 class="text-thin title-super text-loud">%data%</h1>';
 var HTMLheaderRole = '<h4>%data%</h4>';
 var HTMLlogo = '<img class="title-logo" src="%data%" alt="GDS logo" >'
 
+var halfBaked = '';
 var HTMLcontactItem = '<li class="flex-item"><span class="text-muted">%label%</span><span class="text-padding">%data%</span></li>'
-
+var HTMLmainImage = '<img class="img-responsive" src="%data%" alt="%alt%">'
 
 
 

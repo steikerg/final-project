@@ -36,8 +36,10 @@
 				
 			<!-- Large Image -->
 			<div class="row main-image-top-margin main-image-bottom-margin">
-				<div class="col-md-12">
+				<div id="main-image" class="col-md-12">
+        <!--
 					<img class="img-responsive" src="http://lorempixel.com/g/1400/600/sports" alt="Main Sports Image">
+        -->
 				</div>
 			</div>
 
@@ -167,10 +169,17 @@
     if (siteInfo.contactInfo.length > 0) {
       for ( i in siteInfo.contactInfo) {
         halfBaked = HTMLcontactItem.replace("%label%",siteInfo.contactInfo[i].label);
-        formattedContactItem = halfBaked.replace("%data%",siteInfo.contactInfo[i].value);
+        var formattedContactItem = halfBaked.replace("%data%",siteInfo.contactInfo[i].value);
         $("#contact-list").append(formattedContactItem);
       }
     }
+
+    //*********************************************************************
+    // Populate Main image
+    //*********************************************************************
+    halfBaked = HTMLmainImage.replace("%alt%",siteInfo.mainImageAltText);
+    var formattedMainImage = halfBaked.replace("%data%",siteInfo.mainImage);
+    $("#main-image").append(formattedMainImage);
 
   </script>
 
