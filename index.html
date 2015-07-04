@@ -20,12 +20,9 @@
 		<div class="container">
 			<!-- Page Header -->
 			<div class="row" >
-				<div class="col-md-6">
-					<img class="title-logo" src="images/orange.png" alt="GDS logo" >
+				<div id="header-logo" class="col-md-6">
 				</div>
-				<div class="col-md-6 text-right text-uppercase">
-					<h1 class="text-thin title-super text-loud">Jane Doette</h1>
-					<h4>Front-end Ninja</h4>
+				<div id="header-name" class="col-md-6 text-right text-uppercase">
 				</div>
 			</div>
 
@@ -150,6 +147,27 @@
         </div>
       </div>
     </div>
+
+
+  <!-- ************************************************************************** -->
+  <!-- Javascript to populate page from data stored in JSON file starts here      -->
+  <!-- ************************************************************************** -->
+
+  <!-- Reference to attach JSON data file       --> 
+  <script src="js/portfolio-builder.js"></script> 
+
+  <!-- Opening Javascript tag                   -->
+  <script type="text/javascript">
+    var formattedName =HTMLheaderName.replace("%data%",siteInfo.name);
+    var formattedRole =HTMLheaderRole.replace("%data%",siteInfo.role);
+    var formattedLogo =HTMLlogo.replace("%data%",siteInfo.logo);
+
+
+    $("#header-name").append(formattedName);
+    $("#header-name").append(formattedRole);
+    $("#header-logo").append(formattedLogo);
+
+  </script>
 
 	</body>
 </html>
