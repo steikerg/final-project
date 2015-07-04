@@ -28,17 +28,8 @@
 
       <!-- Contact Information -->
       <div id="contact-info" class="row">
-        <div class="col-md-12 contact-info-borders">
+        <div id="contact-info" class="col-md-12 contact-info-borders">
           <ul id="contact-list" class='flex-box modal-text'>
-            <li class="flex-item"><span class="text-muted">email</span><span class="text-padding">jdoette@gmail.com</span></li>
-
-            <li class="flex-item"><span class="text-muted">github</span><span class="text-padding">jdoette</span></li>
-
-            <li class="flex-item"><span class="text-muted">location</span><span class="text-padding">New London, CT</span></li>
-
-            <li class="flex-item"><span class="text-muted">phone&nbsp;</span><span class="">888 999-1234</span></li>
-
-
           </ul>
         </div>
       </div>
@@ -149,15 +140,18 @@
     </div>
 
 
-  <!-- ************************************************************************** -->
-  <!-- Javascript to populate page from data stored in JSON file starts here      -->
-  <!-- ************************************************************************** -->
+  <!-- *********************************************************************** -->
+  <!-- Javascript to populate page from data stored in JSON file starts here   -->
+  <!-- *********************************************************************** -->
 
   <!-- Reference to attach JSON data file       --> 
   <script src="js/portfolio-builder.js"></script> 
 
   <!-- Opening Javascript tag                   -->
   <script type="text/javascript">
+    //*********************************************************************
+    // Populate name, role and logo reference
+    //*********************************************************************
     var formattedName =HTMLheaderName.replace("%data%",siteInfo.name);
     var formattedRole =HTMLheaderRole.replace("%data%",siteInfo.role);
     var formattedLogo =HTMLlogo.replace("%data%",siteInfo.logo);
@@ -166,6 +160,17 @@
     $("#header-name").append(formattedName);
     $("#header-name").append(formattedRole);
     $("#header-logo").append(formattedLogo);
+
+    //*********************************************************************
+    // Populate contact info
+    //*********************************************************************
+    if (siteInfo.contactInfo.length > 0) {
+      for ( i in siteInfo.contactInfo) {
+        halfBaked = HTMLcontactItem.replace("%label%",siteInfo.contactInfo[i].label);
+        formattedContactItem = halfBaked.replace("%data%",siteInfo.contactInfo[i].value);
+        $("#contact-list").append(formattedContactItem);
+      }
+    }
 
   </script>
 
