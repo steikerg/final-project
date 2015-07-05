@@ -53,72 +53,44 @@
 				
 			<!-- Projects section -->
 			<div id="project-section-first3" class="row text-center">
+          <!-- Example of Project code
+            <div class="col-md-4 bottom-padding">
+              <img class="img-responsive center-image" 
+                src="http://lorempixel.com/g/360/220/sports" 
+                alt="Appify Screenshot" 
+                data-toggle="modal" 
+                data-target="#modProject1">
+              <h3 class="text-uppercase">Appify</h3>
+              <a href="https://github.com" target="_blank&quot;">https://github.com</a>
+            </div>
+          -->
 			</div>
 		</div>
 
 	<!-- Modals -->
-
-  	<!-- Modal for Project 1 -->
-    <div class="modal fade" id="modProject1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content modal-background modal-margins">
-          <div class="modal-header modalBorder">
-            <h3 class="modal-title text-uppercase text-center" id="myModalLabel">Appify Web Site</h3>
-          </div>
-          <div class="modal-body modal-text">
-            <img class="img-responsive modal-image-padding center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 1 screenshot" >
-            <div id="project-text1">
-            	This was my second project in this HTML and CSS class. I learned a lot about HTML and CSS.
+    <div id="modals"></div>
+    	<!-- Example of Modal code
+          <div class="modal fade" id="modProject1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-background modal-margins">
+                  <div class="modal-header modalBorder">
+                    <h3 class="modal-title text-uppercase text-center" id="myModalLabel">Appify Web Site</h3>
+                  </div>
+                  <div class="modal-body modal-text">
+                    <img class="img-responsive modal-image-padding center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 1 screenshot" >
+                    <div id="project-text1">
+                    	This was my second project in this HTML and CSS class. I learned a lot about HTML and CSS.
+                    </div>
+                  </div>
+                  <div class="modal-footer modalBorder">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="modal-footer modalBorder">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      -->
 
-    <!-- Modal for Project 2 -->
-    <div class="modal fade" id="modProject2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content modal-background modal-margins">
-          <div class="modal-header modalBorder">
-            <h3 class="modal-title text-uppercase text-center" id="myModalLabel2">Sunflower App</h3>
-          </div>
-          <div class="modal-body modal-text">
-            <img class="img-responsive modal-image-padding center-image" src="http://placebear.com/360/220" alt="Project 2 Screenshot" >
-            <div id="project-text2">
-            	Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-            	<p><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. 
-            	<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-            </div>
-          </div>
-          <div class="modal-footer modalBorder">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal for Project 3 -->
-    <div class="modal fade" id="modProject3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content modal-background modal-margins">
-          <div class="modal-header modalBorder">
-            <h3 class="modal-title text-uppercase text-center" id="myModalLabel3">Bokeh Furniture Store Web Site</h3>
-          </div>
-          <div class="modal-body modal-text">
-            <img class="img-responsive modal-image-padding center-image" src="http://lorempixel.com/g/360/220/sports" alt="Project 3 Screenshot" >
-            <div id="project-text3">
-            	<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-            </div>
-          </div>
-          <div class="modal-footer modalBorder">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
   <!-- *********************************************************************** -->
@@ -174,6 +146,8 @@
       var projectNumber = 0
       for ( i in projects.project) {
         projectNumber++;
+
+        // Prepare Project Section code
         halfBaked = HTMLproject.replace("%image%",projects.project[i].screenshot);
         halfBaked = halfBaked.replace("%alt%",projects.project[i].alt);
         halfBaked = halfBaked.replace("%project-no%",projectNumber);
@@ -181,14 +155,22 @@
         halfBaked = halfBaked.replace("%url%",projects.project[i].url);
         formattedProject = halfBaked.replace("%url-name%",projects.project[i].url);
 
+        // Prepare Modal code
+        halfBaked = HTMLmodal.replace("%title%",projects.project[i].longTitle);
+        halfBaked = halfBaked.replace("%projectNumber%",projectNumber);
+        halfBaked = halfBaked.replace("%image%",projects.project[i].modalImage);
+        halfBaked = halfBaked.replace("%alt%",projects.project[i].modalAltText);
+        formattedModal = halfBaked.replace("%description%",projects.project[i].description);
+
+
+        // Attach code to HTML
         if (projectNumber <= 3 ) {
           $("#project-section-first3").append(formattedProject);
+          $("#modals").append(formattedModal);
         }
 
       }
     }
-
-
   </script>
 
 	</body>

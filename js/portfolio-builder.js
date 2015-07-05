@@ -80,5 +80,5 @@ var HTMLcontactItem = '<li class="flex-item"><span class="text-muted">%label%</s
 var HTMLmainImage = '<img class="img-responsive" src="%data%" alt="%alt%">'
 
 var HTMLproject = '<div class="col-md-4 bottom-padding"><img class="img-responsive center-image" src="%image%" alt="%alt%" data-toggle="modal" data-target="#modProject%project-no%"><h3 class="text-uppercase">%title%</h3><a href="%url%" target=_blank">%url-name%</a></div>'
-
+var HTMLmodal = '<div class="modal fade" id="modProject%projectNumber%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content modal-background modal-margins"><div class="modal-header modalBorder"><h3 class="modal-title text-uppercase text-center" id="myModalLabel">%title%</h3></div><div class="modal-body modal-text"><img class="img-responsive modal-image-padding center-image" src="%image%" alt="%alt%"><div>%description%</div></div><div class="modal-footer modalBorder"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
 
