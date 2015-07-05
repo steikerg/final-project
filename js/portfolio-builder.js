@@ -38,9 +38,9 @@ var projects = {
         "alt": "Appify Screenshot",
         "title": "Appify",
         "url": "https://github.com",
-        "long-title": "Appify Application",
-        "modal-image": "http://lorempixel.com/g/360/220/sports",
-        "modal-alt-text": "Appify Screenshot",
+        "longTitle": "Appify Application",
+        "modalImage": "http://lorempixel.com/g/360/220/sports",
+        "modalAltText": "Appify Screenshot",
         "description": "This was my second project in this HTML and CSS class. I learned a lot about HTML and CSS."
         },
       {
@@ -48,9 +48,9 @@ var projects = {
         "alt": "Sunflower Screenshot",
         "title": "Sunflower",
         "url": "https://github.com",
-        "long-title": "Sunflower Smoke Shop",
-        "modal-image": "http://placebear.com/360/220",
-        "modal-alt-text": "Sunflower Screenshot",
+        "longTitle": "Sunflower Smoke Shop",
+        "modalImage": "http://placebear.com/360/220",
+        "modalAltText": "Sunflower Screenshot",
         "description": "Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.<p><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
         },
       {
@@ -58,9 +58,9 @@ var projects = {
         "alt": "Steiker Portfolio Screenshot",
         "title": "Portfolio",
         "url": "https://github.com/steikerg",
-        "long-title": "Gene Steiker Portfolio",
-        "modal-image": "images/Screenprint-FinalProject.png",
-        "modal-alt-text": "Gene Steiker Portfolio Screenshot",
+        "longTitle": "Gene Steiker Portfolio",
+        "modalImage": "images/Screenprint-FinalProject.png",
+        "modalAltText": "Gene Steiker Portfolio Screenshot",
         "description": "Does this thumbnail look familiar? It's the web page you are visiting right now. Originally developed for a class, I refined the page and put it into use. This page was built using the Bootstrap library. It is populated with information stored in JSON data objects."
         }      
     ]
@@ -79,7 +79,6 @@ var halfBaked = '';
 var HTMLcontactItem = '<li class="flex-item"><span class="text-muted">%label%</span><span class="text-padding">%data%</span></li>'
 var HTMLmainImage = '<img class="img-responsive" src="%data%" alt="%alt%">'
 
-
-
+var HTMLproject = '<div class="col-md-4 bottom-padding"><img class="img-responsive center-image" src="%image%" alt="%alt%" data-toggle="modal" data-target="#modProject%project-no%"><h3 class="text-uppercase">%title%</h3><a href="%url%" target=_blank">%url-name%</a></div>'
 
 
