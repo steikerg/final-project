@@ -55,14 +55,14 @@ var projects = {
         },
       {
         "screenshot": "images/Screenprint-FinalProject.png",
-        "alt": "Steiker Portfolio Screenshot",
+        "alt": "Portfolio Screenshot",
         "title": "Portfolio",
         "url": "https://github.com/steikerg",
-        "longTitle": "Gene Steiker Portfolio",
+        "longTitle": "Portfolio Web Page",
         "modalImage": "images/Screenprint-FinalProject.png",
-        "modalAltText": "Gene Steiker Portfolio Screenshot",
-        "description": "Does this thumbnail look familiar? It's the web page you are visiting right now. Originally developed for a class, I refined the page and put it into use. This page was built using the Bootstrap library. It is populated with information stored in JSON data objects."
-        }      
+        "modalAltText": "Portfolio Screenshot",
+        "description": "Does this thumbnail look familiar? It's the web page you are visiting right now. Originally developed for a class, this web page has been refined and put into use. <p><p>The page will display as many as 9 projects. It was built using the Bootstrap library. All project information is stored in JSON data objects, allowing content to change without the need for any coding."
+        }
     ]
 }
 

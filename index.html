@@ -65,6 +65,14 @@
             </div>
           -->
 			</div>
+
+      <div id="project-section-second3" class="row text-center">
+      </div>
+      <div id="project-section-third3" class="row text-center">
+      </div>
+
+
+
 		</div>
 
 	<!-- Modals -->
@@ -166,6 +174,14 @@
         // Attach code to HTML
         if (projectNumber <= 3 ) {
           $("#project-section-first3").append(formattedProject);
+          $("#modals").append(formattedModal);
+        } 
+        else if (projectNumber <= 6 ) {
+          $("#project-section-second3").append(formattedProject);
+          $("#modals").append(formattedModal);
+        }
+        else if (projectNumber <= 9 ) {
+          $("#project-section-third3").append(formattedProject);
           $("#modals").append(formattedModal);
         }
 
