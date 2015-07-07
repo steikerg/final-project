@@ -18,8 +18,8 @@ var siteInfo = {
             "value": "steikerg"
         },
         {
-            "label": "phone",
-            "value": "973 876-2345"
+            "label": "linkedin",
+            "value": "/www.linkedin.com/in/genesteiker"
         },
         {
             "label": "location",
